@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>肖了个肖的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-07-01T03:13:24.491Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>xiaolegexiao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringCloud 集成 Nacos</title>
+    <link href="http://yoursite.com/2019/06/28/hello-world/"/>
+    <id>http://yoursite.com/2019/06/28/hello-world/</id>
+    <published>2019-06-28T09:23:26.000Z</published>
+    <updated>2019-07-01T03:13:24.491Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
