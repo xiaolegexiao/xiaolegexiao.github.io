@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://http://xiaolegexiao.club/"/>
   <updated>2019-07-01T06:54:46.337Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://http://xiaolegexiao.club/</id>
   
   <author>
     <name>xiaolegexiao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>AWS搭建Shadowsocks</title>
-    <link href="http://yoursite.com/2019/07/01/aws-ss/"/>
-    <id>http://yoursite.com/2019/07/01/aws-ss/</id>
+    <link href="http://http://xiaolegexiao.club/2019/07/01/aws-ss/"/>
+    <id>http://http://xiaolegexiao.club/2019/07/01/aws-ss/</id>
     <published>2019-07-01T05:55:02.000Z</published>
     <updated>2019-07-01T06:54:46.337Z</updated>
     
@@ -35,10 +35,10 @@
     
     </summary>
     
-      <category term="AWS" scheme="http://yoursite.com/categories/AWS/"/>
+      <category term="AWS" scheme="http://http://xiaolegexiao.club/categories/AWS/"/>
     
     
-      <category term="AWS SS" scheme="http://yoursite.com/tags/AWS-SS/"/>
+      <category term="AWS SS" scheme="http://http://xiaolegexiao.club/tags/AWS-SS/"/>
     
   </entry>
   
