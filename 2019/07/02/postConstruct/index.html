@@ -98,16 +98,16 @@
 <meta name="keywords" content="PostConstuct">
 <meta property="og:type" content="article">
 <meta property="og:title" content="静态方法中使用自动注入的对象">
-<meta property="og:url" content="http://yoursite.com/2019/07/02/postConstruct/index.html">
+<meta property="og:url" content="xiaolegexiao.github.io/2019/07/02/postConstruct/index.html">
 <meta property="og:site_name" content="肖了个肖的博客">
 <meta property="og:description" content="前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？   首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&amp;gt;（变量、初始化块）–&amp;gt; 构造器；如果有父类，则顺序是：父类static方法 –&amp;gt; 子类static方法">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/07/02/postConstruct/1.png">
+<meta property="og:image" content="/2019/07/02/postConstruct/1.png">
 <meta property="og:updated_time" content="2019-07-02T02:23:55.959Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="静态方法中使用自动注入的对象">
 <meta name="twitter:description" content="前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？   首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&amp;gt;（变量、初始化块）–&amp;gt; 构造器；如果有父类，则顺序是：父类static方法 –&amp;gt; 子类static方法">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/02/postConstruct/1.png">
+<meta name="twitter:image" content="/2019/07/02/postConstruct/1.png">
 
 
 
@@ -117,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/02/postConstruct/">
+  <link rel="canonical" href="xiaolegexiao.github.io/2019/07/02/postConstruct/">
 
 
 
@@ -345,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/02/postConstruct/">
+    <link itemprop="mainEntityOfPage" href="xiaolegexiao.github.io/2019/07/02/postConstruct/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaolegexiao">
@@ -467,7 +467,7 @@
       
         <p>前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？  </p>
 <p>首先大家要知道一个类的加载顺序一般是：<br>静态变量、静态初始化块）–&gt;（变量、初始化块）–&gt; 构造器；<br>如果有父类，则顺序是：父类static方法 –&gt; 子类static方法 –&gt; 父类构造方法- -&gt; 子类构造方法。</p>
-<p>我们此时注入的对象还没有被自动注入，值为null；<br>JavaEE5引入了<strong>@postConstuct</strong>和<strong>@PreDestroy</strong>注解，该注解是用来修饰一个非静态的void()方法，实现bean初始化之前和销毁之前的一些操作。<br>图片来源于网图<br><img src="//yoursite.com/2019/07/02/postConstruct/1.png" alt="sevlet生命周期"><br><strong>使用说明：</strong><br><strong>@postConstruct</strong> 注释用于在依赖关系注入完成之后需要执行的方法上，以执行任何初始化。此方法必须在将类放入服务之前调用。支持依赖关系注入的所有类都必须支持此注释。即使类没有请求注入任何资源，用 @postConstruct 注释的方法也必须被调用。只有一个方法可以用此注释进行注释。  </p>
+<p>我们此时注入的对象还没有被自动注入，值为null；<br>JavaEE5引入了<strong>@postConstuct</strong>和<strong>@PreDestroy</strong>注解，该注解是用来修饰一个非静态的void()方法，实现bean初始化之前和销毁之前的一些操作。<br>图片来源于网图<br><img src="/2019/07/02/postConstruct/1.png" alt="sevlet生命周期"><br><strong>使用说明：</strong><br><strong>@postConstruct</strong> 注释用于在依赖关系注入完成之后需要执行的方法上，以执行任何初始化。此方法必须在将类放入服务之前调用。支持依赖关系注入的所有类都必须支持此注释。即使类没有请求注入任何资源，用 @postConstruct 注释的方法也必须被调用。只有一个方法可以用此注释进行注释。  </p>
 <p><strong>写法：</strong>  </p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostConstruct</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">do</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@PostConstruct</span> <span class="function"><span class="keyword">void</span> <span class="title">do</span><span class="params">()</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
 
@@ -917,7 +917,7 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://yoursite.com/2019/07/02/postConstruct/";
+    this.page.url = "xiaolegexiao.github.io/2019/07/02/postConstruct/";
     this.page.identifier = "2019/07/02/postConstruct/";
     this.page.title = '静态方法中使用自动注入的对象';
     };
