@@ -94,13 +94,17 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="肖了个肖的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？   首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&amp;gt;（变量、初始化块）–&amp;gt; 构造器；如果有父类，则顺序是：父类static方法 –&amp;gt; 子类static方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="静态方法中使用自动注入的对象">
+<meta property="og:url" content="http://yoursite.com/2019/07/02/postConstruct/index.html">
 <meta property="og:site_name" content="肖了个肖的博客">
+<meta property="og:description" content="前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？   首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&amp;gt;（变量、初始化块）–&amp;gt; 构造器；如果有父类，则顺序是：父类static方法 –&amp;gt; 子类static方法">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-02T02:14:22.777Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="肖了个肖的博客">
+<meta name="twitter:title" content="静态方法中使用自动注入的对象">
+<meta name="twitter:description" content="前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？   首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&amp;gt;（变量、初始化块）–&amp;gt; 构造器；如果有父类，则顺序是：父类static方法 –&amp;gt; 子类static方法">
 
 
 
@@ -110,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/02/postConstruct/">
 
 
 
@@ -120,7 +124,7 @@
   };
 </script>
 
-  <title>肖了个肖的博客</title>
+  <title>静态方法中使用自动注入的对象 | 肖了个肖的博客</title>
   
 
 
@@ -168,8 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -207,7 +210,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -322,9 +325,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -356,10 +359,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/02/postConstruct/" class="post-title-link" itemprop="url">静态方法中使用自动注入的对象</a>
+          <h1 class="post-title" itemprop="name headline">静态方法中使用自动注入的对象
+
               
             
           </h1>
@@ -418,193 +419,15 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？  
-首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&gt;（变量、初始化
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/02/postConstruct/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/aws-ss/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiaolegexiao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/author.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="肖了个肖的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/01/aws-ss/" class="post-title-link" itemprop="url">AWS搭建Shadowsocks</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-01 13:55:02 / 修改时间：15:28:03" itemprop="dateCreated datePublished" datetime="2019-07-01T13:55:02+08:00">2019-07-01</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AWS/" itemprop="url" rel="index"><span itemprop="name">AWS</span></a></span>
-
-                
-                
-              
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
 
           
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/01/aws-ss/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/01/aws-ss/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
@@ -621,25 +444,19 @@
       
 
       
-        
-          
-            <p>
-              Tips：必须要信用卡(可消费外币)
-1.注册AWS注册时需要填写信用卡会预授权付款1刀，并且注册时会通过电话方式发送验证码(中文)，要注意的是AWS免费每月750小时,如果你创建多个实例，那你每月的时长是多个实例的运行时间，千万不要超了。  
-2.创建AWS实例1.创建EC2实例  
-3.连接EC
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/01/aws-ss/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <p>前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？  </p>
+<p>首先大家要知道一个类的加载顺序一般是：<br>静态变量、静态初始化块）–&gt;（变量、初始化块）–&gt; 构造器；<br>如果有父类，则顺序是：父类static方法 –&gt; 子类static方法 –&gt; 父类构造方法- -&gt; 子类构造方法。</p>
+<p>我们此时注入的对象还没有被自动注入，值为null；<br>JavaEE5引入了<strong>@postConstuct</strong>和<strong>@PreDestroy</strong>注解，该注解是用来修饰一个非静态的void()方法，实现bean初始化之前和销毁之前的一些操作。   </p>
+<p><strong>使用说明：</strong><br><strong>@postConstruct</strong> 注释用于在依赖关系注入完成之后需要执行的方法上，以执行任何初始化。此方法必须在将类放入服务之前调用。支持依赖关系注入的所有类都必须支持此注释。即使类没有请求注入任何资源，用 @postConstruct 注释的方法也必须被调用。只有一个方法可以用此注释进行注释。  </p>
+<p><strong>写法：</strong>  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostConstruct</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">do</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@PostConstruct</span> <span class="function"><span class="keyword">void</span> <span class="title">do</span><span class="params">()</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意事项：</strong><br>该方法不得有任何参数；<br>该方法的返回类型必须为 void；<br>该方法不得抛出已检查异常；<br>应用 PostConstruct 的方法可以是 public、protected、package private 或 private；<br>该方法不能是 static；该方法可以是 final；<br>该方法只会被执行一次。</p>
+<p><strong>实际使用：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test</span> <span class="keyword">extends</span> <span class="title">BaseController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> Some some;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> test test;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PostConstruct</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">        test = <span class="keyword">this</span>;</span><br><span class="line">        test.some = <span class="keyword">this</span>.some;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">testSomeThing</span><span class="params">()</span></span>&#123;</span><br><span class="line">    	log.info(some.<span class="keyword">do</span>());</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>加载顺序：构造函数—- @Autowire—–@PostConstruct<br>该类必须由Spring容器进行管理，必须加上@autowire注解，此时就可以在静态方法中调用自动注入的对象。</p>
+
       
     </div>
 
@@ -655,6 +472,39 @@
       
     
     
+      <div>
+        <div id="reward-container">
+  <div>感谢您的支持！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="xiaolegexiao 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="xiaolegexiao 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -662,12 +512,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/01/aws-ss/" rel="next" title="AWS搭建Shadowsocks">
+                <i class="fa fa-chevron-left"></i> AWS搭建Shadowsocks
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -677,14 +543,22 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -977,6 +851,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -1004,9 +882,28 @@
 </script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/07/02/postConstruct/";
+    this.page.identifier = "2019/07/02/postConstruct/";
+    this.page.title = '静态方法中使用自动注入的对象';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://xiaolegexiao.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    window.addEventListener('load', loadComments, false);
+  
+</script>
 
 
 
+
+
+  
 
 
   
