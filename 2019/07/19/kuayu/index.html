@@ -94,13 +94,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="肖了个肖的博客">
-<meta property="og:url" content="http://xiaolegexiao.github.io/index.html">
+  <meta name="description" content="什么是跨域？   首先要了解一下same-origin policy,即同源策略：   same-origin policy简单的说，浏览器中访问的A网站中不能访问B网站中的数据，除非A，B网站是同源的，即对应的协议、域名、端口完全相同。否则是从不同origin得来的，不允许被访问。   解决方法：  ** ①CORS(跨域资源共享)： **       CORS是一个W3C标准，全称是”跨域资源">
+<meta name="keywords" content="nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Nginx解决跨域问题">
+<meta property="og:url" content="http://xiaolegexiao.github.io/2019/07/19/kuayu/index.html">
 <meta property="og:site_name" content="肖了个肖的博客">
+<meta property="og:description" content="什么是跨域？   首先要了解一下same-origin policy,即同源策略：   same-origin policy简单的说，浏览器中访问的A网站中不能访问B网站中的数据，除非A，B网站是同源的，即对应的协议、域名、端口完全相同。否则是从不同origin得来的，不允许被访问。   解决方法：  ** ①CORS(跨域资源共享)： **       CORS是一个W3C标准，全称是”跨域资源">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-19T07:35:02.510Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="肖了个肖的博客">
+<meta name="twitter:title" content="使用Nginx解决跨域问题">
+<meta name="twitter:description" content="什么是跨域？   首先要了解一下same-origin policy,即同源策略：   same-origin policy简单的说，浏览器中访问的A网站中不能访问B网站中的数据，除非A，B网站是同源的，即对应的协议、域名、端口完全相同。否则是从不同origin得来的，不允许被访问。   解决方法：  ** ①CORS(跨域资源共享)： **       CORS是一个W3C标准，全称是”跨域资源">
 
 
 
@@ -110,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://xiaolegexiao.github.io/">
+  <link rel="canonical" href="http://xiaolegexiao.github.io/2019/07/19/kuayu/">
 
 
 
@@ -120,7 +125,7 @@
   };
 </script>
 
-  <title>肖了个肖的博客</title>
+  <title>使用Nginx解决跨域问题 | 肖了个肖的博客</title>
   
 
 
@@ -168,8 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -207,7 +211,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -322,9 +326,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -356,10 +360,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/19/kuayu/" class="post-title-link" itemprop="url">使用Nginx解决跨域问题</a>
+          <h1 class="post-title" itemprop="name headline">使用Nginx解决跨域问题
+
               
             
           </h1>
@@ -436,192 +438,15 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              什么是跨域？   首先要了解一下same-origin policy,即同源策略：   same-origin policy简单的说，浏览器中访问的A网站中不能访问B网站中的数据，除非A，B网站是同源的，即对应的协议、域名、端口完全相同。否则是从不同origin得来的，不允许被访问。   解决方法：
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/19/kuayu/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiaolegexiao.github.io/2019/07/02/postConstruct/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiaolegexiao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/author.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="肖了个肖的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/02/postConstruct/" class="post-title-link" itemprop="url">静态方法中使用自动注入的对象</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-02 09:34:36 / 修改时间：10:38:34" itemprop="dateCreated datePublished" datetime="2019-07-02T09:34:36+08:00">2019-07-02</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
-
-                
-                
-              
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
 
           
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/02/postConstruct/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/02/postConstruct/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
@@ -638,23 +463,22 @@
       
 
       
-        
-          
-            <p>
-              前几天碰到一个需求，需要在静态方法中调用引入的对象，大家都知道在静态方法中是不能直接使用自动注入的对象，因为静态方法是在类被加载时装载到内存，对象属性是在对象实例化时装载，那么如何在静态方法中调用非静态方法？  
-首先大家要知道一个类的加载顺序一般是：静态变量、静态初始化块）–&gt;（变量、初始化
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/02/postConstruct/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <p><strong>什么是跨域？</strong><br>   首先要了解一下same-origin policy,即同源策略：<br>   same-origin policy简单的说，浏览器中访问的A网站中不能访问B网站中的数据，除非A，B网站是同源的，即对应的协议、域名、端口完全相同。否则是从不同origin得来的，不允许被访问。<br>   <strong>解决方法：</strong><br>  ** ①CORS(跨域资源共享)： **   
+   CORS是一个W3C标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源(协议 + 域名 + 端口)服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。<br>   浏览器将CORS请求分成两类：简单请求（simple request）和非简单请求（not-so-simple request）。</p>
+<p>浏览器发出CORS简单请求，只需要在头信息之中增加一个Origin字段。<br>浏览器发出CORS非简单请求，会在正式通信之前，增加一次HTTP查询请求，称为”预检”请求（preflight）。浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些HTTP动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的XMLHttpRequest请求，否则就报错。  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">	<span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CorsConfig</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> CorsConfiguration <span class="title">buildConfig</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        CorsConfiguration corsConfiguration = <span class="keyword">new</span> CorsConfiguration();</span><br><span class="line">        corsConfiguration.addAllowedOrigin(<span class="string">"*"</span>); <span class="comment">// 1允许任何域名使用</span></span><br><span class="line">        corsConfiguration.addAllowedHeader(<span class="string">"*"</span>); <span class="comment">// 2允许任何头</span></span><br><span class="line">        corsConfiguration.addAllowedMethod(<span class="string">"*"</span>); <span class="comment">// 3允许任何方法（post、get等）</span></span><br><span class="line">        <span class="keyword">return</span> corsConfiguration;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> CorsFilter <span class="title">corsFilter</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	UrlBasedCorsConfigurationSource source = <span class="keyword">new</span> 			     UrlBasedCorsConfigurationSource();</span><br><span class="line">        source.registerCorsConfiguration(<span class="string">"/**"</span>, buildConfig()); <span class="comment">// 4</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> CorsFilter(source);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Access-Control-Allow-Origin<br>该字段必填。它的值要么是请求时Origin字段的具体值，要么是一个*，表示接受任意域名的请求。</p>
+<p>Access-Control-Allow-Methods<br>该字段必填。它的值是逗号分隔的一个具体的字符串或者*，表明服务器支持的所有跨域请求的方法。注意，返回的是所有支持的方法，而不单是浏览器请求的那个方法。这是为了避免多次”预检”请求。</p>
+<p> Access-Control-Expose-Headers<br>该字段可选。CORS请求时，XMLHttpRequest对象的getResponseHeader()方法只能拿到6个基本字段：Cache-Control、Content-Language、Content-Type、Expires、Last-Modified、Pragma。如果想拿到其他字段，就必须在Access-Control-Expose-Headers里面指定。</p>
+<p> Access-Control-Allow-Credentials<br>该字段可选。它的值是一个布尔值，表示是否允许发送Cookie.默认情况下，不发生Cookie，即：false。对服务器有特殊要求的请求，比如请求方法是PUT或DELETE，或者Content-Type字段的类型是application/json，这个值只能设为true。如果服务器不要浏览器发送Cookie，删除该字段即可。  </p>
+<p><strong><em>但是我在项目中碰到一个奇怪的事情，corsConfiguration.addAllowedMethod(“</em>“) 使用*号时本地测试跨域成功，但是丢到阿里的服务器上却跨域失败，不清楚为啥，换了一个服务器又可以，这个地方也可以写成 POST、GET、PUT、OPTIONS等。</strong>    </p>
+<p><strong>②Nginx反向代理：</strong><br>跨域是因为资源不在同一个IP或者端口内，比如我有一个前端vue项目A，后端项目B，部署在同一个服务器上，但是端口不一致，此时我们只需要将前后端端口保持一致，既在同一域内，就不会发生跨域。<br>前端vue端口：8083</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">this.axios.get(&quot;http://xxx.xxx.xxx.xxx:8083/test/hello&quot;</span><br><span class="line"></span><br><span class="line">这里我们调用后台端口但是为了解决跨域写成8083与前端在同一域内。</span><br></pre></td></tr></table></figure>
+
+<p>后端端口：8084</p>
+<p>nginx.conf:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">	server&#123;</span><br><span class="line">		listen 8083;   实际上该端口是多少无所谓  </span><br><span class="line">		server_name localhost;   服务器ip或域名</span><br><span class="line">		location /&#123;</span><br><span class="line">			root /usr/local/test/dist;   将vue发到服务器上后的静态资源代理出来</span><br><span class="line">			index  index.html index.htm;</span><br><span class="line">		&#125;</span><br><span class="line">		location /test  &#123;</span><br><span class="line">			proxy_pass http://xxx.xx.xx.xx:8084/test;  </span><br><span class="line">		&#125;	</span><br><span class="line">&#125;</span><br><span class="line">首先我们将vue的静态资源全部代理出来，然后在我们访问前端页面时凡是以/test开头的url都会反向代理到我们的后端地址上，比如说我现在前端代码访问的是xxx.xxx.xxx.xxx:8083/test/hello反向代理后 应该是 xxx.xxx.xxx.xxx:8084/test/hello.</span><br><span class="line">这样就解决了跨域问题。</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -670,206 +494,77 @@
       
     
     
+      <div>
+        <div id="reward-container">
+  <div>感谢您的支持！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="xiaolegexiao 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="xiaolegexiao 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiaolegexiao.github.io/2019/07/01/aws-ss/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiaolegexiao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/author.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="肖了个肖的博客">
-    </span>
-
-    
-      <header class="post-header">
-
         
+          
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/01/aws-ss/" class="post-title-link" itemprop="url">AWS搭建Shadowsocks</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-01 13:55:02 / 修改时间：15:28:03" itemprop="dateCreated datePublished" datetime="2019-07-01T13:55:02+08:00">2019-07-01</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AWS/" itemprop="url" rel="index"><span itemprop="name">AWS</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
           
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/01/aws-ss/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/01/aws-ss/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-            <p>
-              Tips：必须要信用卡(可消费外币)
-1.注册AWS注册时需要填写信用卡会预授权付款1刀，并且注册时会通过电话方式发送验证码(中文)，要注意的是AWS免费每月750小时,如果你创建多个实例，那你每月的时长是多个实例的运行时间，千万不要超了。  
-2.创建AWS实例1.创建EC2实例  
-3.连接EC
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/01/aws-ss/#more" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/02/postConstruct/" rel="next" title="静态方法中使用自动注入的对象">
+                <i class="fa fa-chevron-left"></i> 静态方法中使用自动注入的对象
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
+            
+          </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -879,14 +574,22 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1187,6 +890,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -1214,9 +921,28 @@
 </script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://xiaolegexiao.github.io/2019/07/19/kuayu/";
+    this.page.identifier = "2019/07/19/kuayu/";
+    this.page.title = '使用Nginx解决跨域问题';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://xiaolegexiao.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    window.addEventListener('load', loadComments, false);
+  
+</script>
 
 
 
+
+
+  
 
 
   
